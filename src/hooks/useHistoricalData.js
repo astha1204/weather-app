@@ -4,7 +4,7 @@ import { buildHistoricalWeatherURL, buildHistoricalAirQualityURL } from '../util
 function useHistoricalData(lat, lon, startDate, endDate) {
   const [data, setData] = useState({
     historical: null,
-    loading: true,
+    loading: false,
     error: null,
   })
 
